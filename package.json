@@ -1,0 +1,15 @@
+{
+  "name": "classchallenge",
+  "version": "1.0.0",
+  "description": "Desafio ClassApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Pupo",
+  "license": "ISC",
+  "dependencies": {
+    "google-libphonenumber": "^3.2.5",
+    "lodash": "^4.17.15"
+  }
+}

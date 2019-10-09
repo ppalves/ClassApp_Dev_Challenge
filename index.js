@@ -219,7 +219,7 @@ for (let i = 0; i < tamanhoArray; i++) {
     }
 }
 
-//Por ultimo, substituimos as ocorrencias de " '' ", "no" e "0" nos campos see_all e invisible por "false"
+//substituimos as ocorrencias de " '' ", "no" e "0" nos campos see_all e invisible por "false"
 arrayobj.forEach(objeto => {
     if(objeto.see_all == "" || objeto.see_all == "no" || objeto.see_all == 0){
         objeto.see_all = false
@@ -232,6 +232,10 @@ arrayobj.forEach(objeto => {
     }
     else{
         objeto.invisible = true
+    }
+    //Verificamos caso o aluno so esteja em uma classe, representamos como string, igual no exemplo fornecido
+    if(objeto.classes.length == 1){
+        objeto.classes = objeto.classes.toString()
     }
 });
 
